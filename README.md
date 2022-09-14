@@ -10,7 +10,7 @@
 
 记录者 @kongzue
 
-1. 需要keras-contrib，但是keras-contrib在官方仓库没有编译好的，需要手动拉取编译，方法是前往https://github.com/keras-team/keras-contrib.git下载到本地后
+1. 需要keras-contrib，但是keras-contrib在官方仓库没有编译好的，需要手动拉取编译，方法是前往 https://github.com/keras-team/keras-contrib.git 下载到本地后
 
    ```
    git clone https://www.github.com/keras-team/keras-contrib.git
