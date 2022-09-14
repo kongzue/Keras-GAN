@@ -10,7 +10,7 @@
 
 记录者 @kongzue
 
-1. 需要keras-contrib，但是keras-contrib在官方仓库没有编译好的，需要手动拉取编译，方法是前往 https://github.com/keras-team/keras-contrib.git 下载到本地后
+#### 1. 需要keras-contrib，但是keras-contrib在官方仓库没有编译好的，需要手动拉取编译，方法是前往 https://github.com/keras-team/keras-contrib.git 下载到本地后
 
    ```
    git clone https://www.github.com/keras-team/keras-contrib.git
@@ -18,7 +18,8 @@
    python setup.py install
    ```
 
-2. ~~Git相关，其一是配置全局代理：~~
+
+#### 2. ~~Git相关，其一是配置全局代理：~~
 
    ```
    git config --global https.proxy http://127.0.0.1:1080
@@ -31,11 +32,13 @@
    git config --global http.sslVerify “false”
    ```
 
-3. tensorflow必须在python3.6以下安装，我的环境是Python3.6
+
+#### 3. tensorflow必须在python3.6以下安装，我的环境是Python3.6
 
 ![image](https://user-images.githubusercontent.com/10115359/190047588-7450e492-917d-4f9c-bc42-9eb87783049c.png)
 
-4. 会遇到无法连接到亚马逊服务器amazonaws.com
+
+#### 4. 会遇到无法连接到亚马逊服务器amazonaws.com
 
    需要手动下载 mnist.npz
 
@@ -53,7 +56,8 @@
 
 指向你刚刚下载的mnist.npz文件
 
-5. 遇到错误：tensorflow.python.framework.errors_impl.FailedPreconditionError: Error while...
+
+#### 5. 遇到错误：tensorflow.python.framework.errors_impl.FailedPreconditionError: Error while...
 
    需要修改代码
 
@@ -71,6 +75,7 @@ from keras.optimizers import Adam
 from tensorflow.keras.optimizers import Adam
 ```
 
-6. 运行成功。
+
+## 运行成功。
 
 ![image](https://user-images.githubusercontent.com/10115359/190047671-b7325556-bb09-434f-84fa-6102d8d32205.png)
