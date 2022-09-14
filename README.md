@@ -2,6 +2,8 @@
 
 请注意本库不接受 issues，仅用作记录跑起来 Keras-GAN 过程中遇到的一些问题及解决方法。
 
+重要：首先请确保网络正常访问所有需要的库的服务器。
+
 本次主要目的是跑起来其中的 CGAN，其他的项目遇到的问题类似，希望能对你有所帮助。
 
 原库使用方法和提交 issues 请访问：[eriklindernoren/Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
@@ -17,9 +19,24 @@
    cd keras-contrib
    python setup.py install
    ```
+#### 2. tensorflow 安装遇到问题：
 
+```
+PackagesNotFoundError: The following packages are not available from current channels:
+  -tensorflow
+```
 
-#### 2. ~~Git相关，其一是配置全局代理：~~
+输入：
+```
+anaconda show  free/tensorflow
+```
+按照提示复制返回的：
+```
+conda install --channel https://conda.anaconda.org/free tensorflow
+```
+回车安装。
+
+#### ~~Git相关，其一是配置全局代理：~~
 
    ```
    git config --global https.proxy http://127.0.0.1:1080
